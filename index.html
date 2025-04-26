@@ -3,65 +3,236 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My LOVE ❤️</title>
+    <meta name="title" content="LOVE LOVE">
+    <meta name="description" content="Sebuah kisah percintaan">
+    <meta name="author" content="Ramadhan Perkasa">
+    <title>Kitan ENONG</title>
+
 
     <style>
-        * {
-            margin: 0;
-            text-align: center;
-        }
+        @import url('https://fonts.googleapis.com/css2?family=Italiana&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Italiana&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
         
+        * { 
+            margin: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            cursor: progress;
+        }
+
         body {
-            background: red;
-            overflow: hidden;
+            background: #E5DDC5;
 
             display: flex;
             justify-content: center;
+        }
 
-            background-image: url(./images/background.jpg);
+        /* fonts */
+        .italiana-regular {
+            font-family: "Italiana", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .prompt-light {
+            font-family: "Prompt", sans-serif;
+            font-weight: 300;
+            font-style: normal;
+        }
+
+        .poppins-bold {
+            font-family: "Poppins", sans-serif;
+            font-weight: 700;
+            font-style: normal;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .responsive-fonts {
+            font-size: 2vw;
+        }
+
+        .responsive-fonts-p {
+            font-size: 0.5;
+        }
+
+        .margin {
+            margin-top: 50px;
+            margin-bottom: 40px;
         }
 
         .container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            background: #F1EEDC;
 
-            height: 100vh;
-            width: 50%;
+            max-width: 50%;
+            width: 40%;
+            height: 100%;
 
-            background: #EFEFEF;
+            padding: 50px 0px;
         }
 
         .container-images {
             display: flex;
-            flex-direction: column;
-            gap: 10px;
-        }
-        
-       map {
-        cursor: pointer;
-       }
-    </style>
+            flex-direction: row;
 
+            gap: 10px;
+
+            margin: 50px 0;
+
+            justify-content: center;
+        }
+
+        .container-text {
+            padding: 0 5px;
+
+            margin: 30px 0;
+
+            position: relative;
+        }
+
+        .images-setting:nth-child(odd) {
+            margin-top: 20px;
+        }
+
+        .images-setting:nth-child(even) {
+            margin-bottom: 20px;
+        }
+
+        img.images-setting {
+            object-fit: cover;
+        }
+
+        .bg-cream {
+            background: #E5DDC5;
+        }
+
+        .padding {
+            padding: 50px 100px;
+        }
+
+        .paddings {
+            padding: 50px 100px;
+        }
+
+        .container-title {
+            display: flex;
+            flex-direction: row;
+
+            justify-content: center;
+        }
+
+        .custom-position-img-1 {
+            position: absolute;
+            top: 20px;
+            right: 10px;
+        }
+
+        .custom-position-img-2 {
+            position: absolute;
+            bottom: 20px;
+            left: 10px;
+        }
+
+        .custom-position-img-3 {
+            position: absolute;
+            bottom: 0;
+            right: 30px;
+        }
+
+        .images-custom {
+            display: flex;
+            flex-direction: row;
+            gap: 0;
+            justify-content: center;
+        }
+
+        .images-custom img.img-cstm:nth-child(odd) {
+            margin-top: 10px;
+        }
+    </style>
 </head>
-<!-- add comit -->
 <body>
     <div class="container">
-        <div class="container-images">
-            <h1>HALOO PACAL AKUUU!!!</h1>
-    
-            <img src="./images/love.png" usemap="#image-map">
-
-            <map name="image-map">
-                <area target="_self" alt="cantik1" title="cantik1" class="satu" href="./file/linksatu.html" coords="203,365,4,3" shape="rect">
-                <area target="_self" alt="cantik2" title="cantik2" class="dua" href="./file/linkdua.html" coords="415,365,209,3" shape="rect">
-                <area target="_self" alt="cantik3" title="cantik3" class="tiga" href="./file/linktiga.html" coords="416,2,618,365" shape="rect">
-            </map>
-
-            <span>terima kaciiiihhh udahh mauu sama akuu wlee</span>
-
-            <p>nanti aku lanjutin lagi yah projek nya, soalnya aku teh malem ini udah cape, pengen bobo wleeeeee</p>
+        <div class="container-title">
+            <h1 class="italiana-regular text-center responsive-fonts margin" style="width: 80%; max-width: 100%;">KISAH KITA - CATATAN KECIL BUAT KINTAN ENONG</h1>
         </div>
+
+        <div class="container-images">
+            <img src="./images/news/1.png" class="images-setting" alt="kintan sayang" width="auto">
+            <img src="./images/news/2.png" class="images-setting" alt="kintan sayang" width="auto">
+            <img src="./images/news/3.png" class="images-setting" alt="kintan sayang" width="auto">
+            <img src="./images/news/4.png" class="images-setting" alt="kintan sayang" width="auto">
+            <img src="./images/news/5.png" class="images-setting" alt="kintan sayang" width="auto">
+            <img src="./images/news/6.png" class="images-setting" alt="kintan sayang" width="auto">
+        </div>
+
+        <section class="container-text">
+            <div class="padding">
+                <h3 class="poppins-bold responsive-fonts">Halo sayang</h3>
+                <p class="prompt-light responsive-fonts-p">Hai kamu, manusia paling spesial dalam hidupku. Aku buat halaman kecil ini sebagai ruang rahasia kita — tempat aku bisa bilang betapa berharganya kamu untukku. Mungkin sederhana, tapi aku buat ini sepenuh hati. ✨</p>
+            </div>
+        </section>
+
+        <section class="container-text text-center bg-cream">
+            <div class="paddings">
+                <h3 class="poppins-bold responsive-fonts">Hal-hal yang Aku Suka Darimu</h3>
+                <p class="responsive-fonts-p prompt-light">
+                    Caramu tertawa, yang selalu berhasil membuat hariku lebih cerah.
+                    Kebaikan hatimu, bahkan untuk hal-hal kecil yang kadang orang lain lewatin.
+                    Sabar dan pengertianmu, bahkan saat aku lagi 'nggak banget'.
+                    Cara kamu percaya sama aku — itu kekuatan terbesar buatku.
+                </p>
+            </div>
+
+            <div class="images-custom">
+                <img src="/images/news/11.png" class="img-cstm" width="auto" style="object-fit: cover;" alt="kintancantik">
+                <img src="/images/news/12.png" class="img-cstm" width="auto" style="object-fit: cover;" alt="kintancantik">
+                <img src="/images/news/10.png" class="img-cstm" width="auto" style="object-fit: cover;" alt="kintancantik">
+            </div>
+
+            <div class="custom-position-img-1">
+                <img src="/images/news/7.png" alt="love">
+            </div>
+            <div class="custom-position-img-2">
+                <img src="/images/news/9.png" alt="love">
+            </div>
+        </section>
+
+        <section class="container-text">
+            <div class="padding">
+                <h3 class="poppins-bold responsive-fonts">Momen Spesial Kita</h3>
+                <p class="responsive-fonts-p prompt-light">
+                    Ada banyak momen yang pengen aku simpan selamanya. Dari obrolan random, jalan berdua sambil ketawa nggak jelas, sampe detik-detik kecil di mana kita diam tapi ngerti satu sama lain.
+                    <br><br>
+                    Aku rasa, kamu memang rumah yang aku cari selama ini.
+                </p>
+            </div>
+
+            <div class="custom-position-img-3">
+                <img src="/images/news/8.png" alt="meme">
+            </div>
+        </section>
+
+        <section class="container-text text-center bg-cream">
+            <div class="padding">
+                <h3 class="poppins-bold responsive-fonts">Harapanku untuk Kita</h3>
+                <p class="responsive-fonts-p prompt-light">
+                    Aku pengen kita terus bareng-bareng, ngelewatin semua suka duka, tetap jadi tim paling solid, dan saling genggam tanpa pernah lepas. Aku tahu, kita nggak sempurna. Tapi justru itu yang bikin perjalanan kita indah.
+                </p>
+                <br><br>
+                <audio controls>
+                    <source src="audio/Baon Cikadap lagu jorok asade kont.mp3" type="audio/mp3">
+                </audio>
+            </div>
+
+        </section>
+
+        <footer class="text-center poppins-bold">Terima kasih sudah hadir dalam hidupku. Aku sayang kamu! ❤️</footer>
     </div>
 </body>
 </html>
